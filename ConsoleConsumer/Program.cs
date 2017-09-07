@@ -18,7 +18,7 @@ namespace ConsoleConsumer
             try
             {
                 var config = new Config() { GroupId = "example-csharp-consumer" };
-                using (var consumer = new EventConsumer(config, "10.0.8.145:9092,10.0.8.147:9092"))
+                using (var consumer = new EventConsumer(config, ""))
                 {
                     //注册一个事件
                     consumer.OnMessage += (obj, msg) =>
